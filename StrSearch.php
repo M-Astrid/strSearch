@@ -15,7 +15,7 @@ use FInfo\FInfo;
 
 class StrSearch
 {
-	const PATH_TO_CONFIG = 'config.yaml';
+	const PATH_TO_CONFIG = __DIR__.'\config.yaml';
 	
 	/*
 	$file - путь к файлу или url, если файл на удаленном сервере
@@ -25,7 +25,7 @@ class StrSearch
 	*/
 	public static function stringFound($file, $find)
 	{
-		self::checkRestrictions();
+		self::checkRestrictions($file);
 		return strpos(file_get_contents($file), $find) !== false;
 	}
 		
