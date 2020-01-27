@@ -8,8 +8,8 @@
 
 	require_once('path/to/StrSearch.php');
 
-	$file = 'data.txt' // путь к файлу или url, если файл на удаленном сервере
-	$find = 'Искомая строка' // искомый фрагмент
+	$file = 'data.txt'; // путь к файлу или url, если файл на удаленном сервере
+	$find = 'Искомая строка'; // искомый фрагмент
 	
 	StrSearch::stringFound($file, $find); // boolean
 	StrSearch::position($file, $find); // array('line' => номер строки в файле, 'position' => положение в строке), если совпадений не найдено - false
