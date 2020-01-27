@@ -1,0 +1,3 @@
+restrictions:
+  max_size: 
+  mime-types: ['text/plain', 'text/html', 'text/css']
